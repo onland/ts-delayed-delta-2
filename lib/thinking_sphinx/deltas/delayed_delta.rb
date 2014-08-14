@@ -42,7 +42,7 @@ class ThinkingSphinx::Deltas::DelayedDelta <
     else
       {
         :priority => job_option(:delayed_job_priority, 0),
-        :queue    => job_option(:delayed_job_queue)
+        :queue    => job_option(:delayed_job_queue, 'thinking_sphinx_delayed_delta')
       }
     end
   end
